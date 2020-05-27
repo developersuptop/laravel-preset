@@ -1,25 +1,14 @@
 {
     "name": "supto/laravel-preset",
-    "description": "The default Supto Laravel preset.",
-    "keywords": ["laravel", "laravel preset", "Supto"],
+    "description": "Laravel Preset for @material-ui",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Supto Purkayasto",
-            "email": "suptopurkayasto@gmail.com"
+            "email": "developersuptop@gmail.com"
         }
     ],
     "minimum-stability": "stable",
-    "autoload": {
-        "psr-4": {
-            "Supto\\LaravelPreset\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-              "SuptoServiceProvider"
-            ]
-        }
-    }
+    "require": {}
 }
