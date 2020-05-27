@@ -1,12 +1,13 @@
 <?php
 
-namespace Laracasts\LaravelPreset;
+namespace Supto\LaravelPreset;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Foundation\Console\PresetCommand;
 
 class SuptoServiceProvider extends ServiceProvider
 {
+    use Laravel\Ui\UiCommand;
+
     /**
      * Bootstrap services.
      *
@@ -14,10 +15,12 @@ class SuptoServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        PresetCommand::macro('laracasts', function ($command) {
+        UiCommand::macro('supto', function ($command) {
             Preset::install();
 
             $command->info('All finished! Please compile your assets, and you are all set to go!');
         });
     }
+
+
 }

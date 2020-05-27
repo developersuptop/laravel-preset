@@ -1,12 +1,11 @@
 <?php
 
-namespace Laracasts\LaravelPreset;
+namespace Supto\LaravelPreset;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
-use Illuminate\Foundation\Console\Presets\Preset as LaravelPreset;
 
-class Preset extends LaravelPreset
+class Preset
 {
     public static function install()
     {
