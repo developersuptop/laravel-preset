@@ -1,0 +1,25 @@
+{
+    "name": "Supto/laravel-preset",
+    "description": "The default Supto Laravel preset.",
+    "keywords": ["laravel", "laravel preset", "Supto"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Supto Purkayasto",
+            "email": "suptopurkayasto@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Supto\\LaravelPreset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+              "SuptoServiceProvider"
+            ]
+        }
+    }
+}
